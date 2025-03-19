@@ -1,1 +1,377 @@
+/* Rolex-inspired styling for Shopify Dawn theme */
 
+/* Typography */
+@font-face {
+  font-family: 'RolexFont';
+  src: url('https://ext.same-assets.com/1165261981/2066178630.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNow';
+  src: url('https://ext.same-assets.com/3217620530/2824714097.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNow';
+  src: url('https://ext.same-assets.com/2257285349/1245439120.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNow';
+  src: url('https://ext.same-assets.com/355719841/3241982531.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Rolex Colors */
+:root {
+  --rolex-green: #1f6447;
+  --rolex-dark: #232424;
+  --rolex-light-gray: #e8e8e6;
+  --rolex-medium-gray: #89999e;
+  --rolex-text-light: #818b94;
+  --rolex-gold: #9a6e4e;
+}
+
+/* Global Typography */
+body {
+  font-family: 'HelveticaNow', Arial, sans-serif;
+  color: var(--rolex-dark);
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-header__heading,
+.card__heading,
+.product__title {
+  font-family: 'RolexFont', serif;
+}
+
+/* Header styling */
+.header {
+  background-color: var(--rolex-green);
+}
+
+.header__heading-link,
+.header__menu-item span,
+.header__icon span {
+  color: #fff;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  background-color: var(--rolex-dark);
+}
+
+.announcement-bar__message {
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+/* Product cards styling */
+.card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.card:hover .card__inner {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.card-wrapper {
+  color: var(--rolex-dark);
+}
+
+.card__inner {
+  border-radius: 0;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card__media {
+  border-radius: 0;
+}
+
+.card__content {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.card__information {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-information__text {
+  font-size: 1.1rem;
+  color: var(--rolex-dark);
+}
+
+.price {
+  color: var(--rolex-text-light);
+}
+
+/* Custom discovery link on cards */
+.card__content::after {
+  content: 'Discover';
+  display: inline-block;
+  color: var(--rolex-green);
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card__content::after {
+  opacity: 1;
+}
+
+.card__content::before {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 70px;
+  height: 1px;
+  background-color: var(--rolex-green);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.card:hover .card__content::before {
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: left;
+}
+
+/* Button styling */
+.button {
+  border-radius: 50px;
+  min-width: 12rem;
+  min-height: 3rem;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.button--primary {
+  background-color: var(--rolex-green);
+  border: 1px solid var(--rolex-green);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background-color: #18523a;
+  border-color: #18523a;
+}
+
+.button--secondary {
+  border: 1px solid currentColor;
+}
+
+.button--secondary:hover {
+  color: var(--rolex-green);
+  border-color: var(--rolex-green);
+}
+
+/* Section headers */
+.title {
+  font-family: 'RolexFont', serif;
+  color: var(--rolex-dark);
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-header__heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header__subheading {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--rolex-text-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Footer styling */
+.footer {
+  background-color: var(--rolex-light-gray);
+  border-top: none;
+}
+
+.footer-block__heading {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer-block__details-content {
+  color: var(--rolex-text-light);
+}
+
+.footer-block__details-content a {
+  color: var(--rolex-text-light);
+  transition: color 0.3s;
+}
+
+.footer-block__details-content a:hover {
+  color: var(--rolex-green);
+}
+
+/* Product page */
+.product__title {
+  font-size: 2.5rem;
+  color: var(--rolex-dark);
+}
+
+.product__description {
+  color: var(--rolex-text-light);
+}
+
+/* Media queries */
+@media screen and (min-width: 750px) {
+  .section-header__heading {
+    font-size: 2.5rem;
+  }
+  
+  .card-information__text {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .section-header__heading {
+    font-size: 3rem;
+  }
+}
+
+/* Rolex Crown Logo */
+.rolex-crown {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 72"><path fill="%231f6447" d="M46.7,9.4c-1.1,0-2.2-0.9-2.2-2s1-2,2.2-2 c1.2,0,2.2,0.9,2.2,2S47.9,9.4,46.7,9.4z M62.9,17.3c-1.2,0-2.2-0.9-2.2-2s1-2,2.2-2c1.2,0,2.2,0.9,2.2,2S64.1,17.3,62.9,17.3z M30.5,17.3c-1.2,0-2.2-0.9-2.2-2s1-2,2.2-2c1.2,0,2.2,0.9,2.2,2S31.7,17.3,30.5,17.3z M78.3,67.9H15.1c-2.8,0-5.1-2.3-5.1-5.1V50.2c-1.7,0-3.1-1.4-3.1-3.1V35.3c0-1.7,1.4-3.1,3.1-3.1V19.8c0-2.8,2.3-5.1,5.1-5.1h0.9c1.3-2.2,4.1-2.9,6.2-1.6c0.6,0.4,1.2,0.9,1.6,1.6h13.5c0.4-0.7,1-1.3,1.7-1.7c-0.5-2.5,1.1-4.9,3.6-5.4c0.3-0.1,0.6-0.1,0.9-0.1c-0.5-2.5,1.1-4.9,3.6-5.4c2.5-0.5,4.9,1.1,5.4,3.6c0.1,0.3,0.1,0.6,0.1,0.9c3.5-2.1,8-0.9,10,2.6c0.1,0.1,0.1,0.3,0.2,0.4h12.1c1.3-2.2,4.1-2.9,6.2-1.6c0.6,0.4,1.2,0.9,1.6,1.6h0.9c2.8,0,5.1,2.3,5.1,5.1v12.4c1.7,0,3.1,1.4,3.1,3.1v11.8c0,1.7-1.4,3.1-3.1,3.1v12.6C83.4,65.6,81.1,67.9,78.3,67.9z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+/* Special full-width hero sections */
+.section--full-width {
+  padding: 0;
+  margin: 0;
+}
+
+.section--full-width .banner__content {
+  padding: 4rem 0;
+}
+
+.section--full-width .banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section--full-width .banner__box {
+  max-width: 700px;
+}
+
+.section--full-width .banner__heading {
+  font-size: 3rem;
+  font-family: 'RolexFont', serif;
+  margin-bottom: 1.5rem;
+}
+
+.section--full-width .banner__text {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.section--full-width .banner__buttons .button {
+  min-width: 180px;
+}
+
+@media screen and (min-width: 990px) {
+  .section--full-width .banner__heading {
+    font-size: 4.5rem;
+  }
+  
+  .section--full-width .banner__text {
+    font-size: 1.25rem;
+  }
+}
+
+/* Section with dark background */
+.section--dark {
+  background-color: var(--rolex-dark);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.section--dark .section-header__heading,
+.section--dark .card-information__text {
+  color: #fff;
+}
+
+.section--dark .price {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Collection page grid */
+.collection .grid__item {
+  padding: 0 1rem 2rem;
+}
+
+/* Animation for elements */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

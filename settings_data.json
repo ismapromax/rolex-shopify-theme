@@ -1,0 +1,142 @@
+{
+  "current": {
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#1f6447",
+    "colors_accent_2": "#232424",
+    "colors_text": "#232424",
+    "colors_outline_button_labels": "#1f6447",
+    "colors_background_1": "#ffffff",
+    "colors_background_2": "#e8e8e6",
+    "card_style": "standard",
+    "card_image_padding": 0,
+    "card_text_alignment": "center",
+    "card_border_thickness": 0,
+    "card_border_opacity": 0,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 0,
+    "card_shadow_blur": 0,
+    "button_border_thickness": 1,
+    "button_border_opacity": 100,
+    "button_radius": 50,
+    "button_shadow_opacity": 0,
+    "button_shadow_horizontal_offset": 0,
+    "button_shadow_vertical_offset": 0,
+    "button_shadow_blur": 0,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "center",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 0,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 0,
+    "collection_card_shadow_blur": 0,
+    "media_border_thickness": 0,
+    "media_border_opacity": 0,
+    "media_radius": 0,
+    "favicon": "rolex-crown.svg",
+    "currency_code_enabled": true,
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "cart_type": "drawer",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "accent-1",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
+          "sticky_header_type": "on-scroll-up",
+          "show_line_separator": false,
+          "enable_sticky_header": true,
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Rolex watches",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "The Rolex family",
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Perpetual Initiatives",
+              "menu": "footer"
+            }
+          },
+          "footer-3": {
+            "type": "text",
+            "settings": {
+              "heading": "About Rolex",
+              "subtext": "<p>Rolex watches are crafted from the finest raw materials and assembled with scrupulous attention to detail.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2",
+          "footer-3"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our newsletter",
+          "enable_follow_on_shop": false,
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "show_policy": false,
+          "margin_top": 48,
+          "padding_top": 60,
+          "padding_bottom": 60
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Official Rolex Website - Swiss Luxury Watches",
+              "text_alignment": "center",
+              "color_scheme": "accent-2",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
